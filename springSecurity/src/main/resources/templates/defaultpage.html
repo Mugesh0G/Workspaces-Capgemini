@@ -1,0 +1,31 @@
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Hola!</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="https://getbootstrap.com/docs/4.0/examples/signin/signin.css" rel="stylesheet" crossorigin="anonymous">
+
+</head>
+
+<body>
+<div class="container">
+    <form class="form-signin" method="get" action="/logout">
+        <img style="padding:50px" th:src="*{'data:image/png;base64,'+{Success.pic}}" class="img-thumbnail" alt="...">
+        <h2 class="form-signin-heading" th:text="${Success.studentName}"></h2>
+        <button class="btn btn-primary btn-block" type="submit">Logout</button>
+    </form>
+
+    <form class="form-signin" method="post" th:action="@{'/upload'+${Success.studentName}}" enctype="multipart/form-data">
+            <div class="input-group">
+                <input type="file" name="pic" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                <button class="btn btn-outline-success" type="submit" id="inputGroupFileAddon04">Upload</button>
+            </div>
+
+    </form>
+
+</div>
+</body>
+</html>
