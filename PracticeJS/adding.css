@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: monospace,'Courier New', Courier;
+    box-sizing: border-box;   
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.container{
+    display: flexbox;
+    width: 500px;
+    height: auto;
+    padding: 10px;
+    background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);}
+.heading{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    background: radial-gradient(circle at 7.5% 24%, rgb(237, 161, 193) 0%, rgb(250, 178, 172) 25.5%, rgb(190, 228, 210) 62.3%, rgb(215, 248, 247) 93.8%);
+    margin: 12px;
+    padding: 30px;
+}
+.task
+{
+    text-transform: capitalize;
+    margin: 12px;
+    padding: 6px;
+    list-style: none;
+    background: radial-gradient(circle at 10% 20%, rgb(248, 213, 214) 0%, rgb(243, 242, 229) 90%);
+    cursor: default;
+}
+.task:hover{
+   text-decoration: line-through;
+}
+#add, #complete, #changeColor{
+    padding: 8px 60px 8px 60px;
+    margin: 8px;
+    border-radius: 10px;
+    border: solid 0.01mm;
+    
+}
+
+#add:hover
+{
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: lightsalmon;
+}
+.green:hover
+{
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: palegreen;
+}
+.red:hover
+{
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: red;
+}
+
+#text-box
+{
+    border: none;
+    background:transparent;
+    outline:none;
+    text-align: center;
+    
+}
+
+input::placeholder
+{
+    font-weight: bold;
+}
+
+.colorButton
+{
+    border-radius: 10px;
+    border: solid 1px;
+    padding: 0px 5px ;
+}
+.colorButton:hover
+{
+    background-color: burlywood;
+}
+lord-icon
+{
+    padding-top: 2px;
+}
